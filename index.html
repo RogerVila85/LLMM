@@ -1,41 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pàgina web oficial de cerca de pel·lícules">
+    <link rel="icon" href="C:/Users/roger/Documents/vs%20code/logos/pantalla-de-cine.png" type="image/x-icon">
     <title>PRIMERA PÀGINA WEB OFICIAL</title>
 </head>
 <body>
     <header><a href="https://www.themoviedb.org/?language=ca" target="_blank"><img src="https://www.themoviedb.org/assets/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="Logotip" height="25"></a>
     <ul>
         <li><a href="https://www.buscador.com" target="_blank">Buscador</a></li>
-        <li><a href="https://www.contacte.com" target="_blank">Contacte</a></li>
+        <li><a href="file:///c%3A/Users/roger/Documents/vs%20code/contacte.html" target="_blank">Contacte</a></li>
     </ul>
     </header>
     <div>
     <h1>BUSCAR una pel·lícula</h1>
     <p>Milions de títols, un sol cercador.</p>
-    <input type="text" placeholder="Cerca una pel·lícula, per exemple: 'Inception'">
+    <form action="https://www.themoviedb.org/search" method="get">
+    <label for="query">Cerca una pel·lícula:</label>
+    <input type="search" name="query" id="query" placeholder="Cerca una pel·lícula, per exemple: 'Inception'" required>
     <button type="submit">Cercar</button>
+    </form>
     </div>
     <main>
         <section>
         <div>
         <h2>Resultats</h2>
         <article>
-            <a href="https://pelispiderman.com" target="_blank"><img src="https://image.tmdb.org/t/p/w1280/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" alt="Portada de la pel·lícula" alt="Portada peli Spiderman" height="200"></a>
+            <a href="https://pelispiderman.com" target="_blank"><img src="https://image.tmdb.org/t/p/w1280/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" alt="Portada de la pel·lícula de Spider-Man: No way Home." height="200"></a>
             <h3>Spider-Man: No Way Home</h3>
             <p>16 desembre de 2021</p>
         </article>
         <br>
         <article>
-            <a href="https://familyguy.com" target="_blank"><img src="https://image.tmdb.org/t/p/w1280/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg" alt="Portada de la pel·lícula" alt="Portada peli Family Guy" height="200"></a>
+            <a href="https://familyguy.com" target="_blank"><img src="https://image.tmdb.org/t/p/w1280/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg" alt="Portada de la pel·lícula de Family Guy" height="200"></a>
             <h3>Family Guy</h3>
             <p>16 desembre de 2021</p>
         </article>
         <br>
         <article>
-            <a href="https://avengers.com" target="_blank"><img src="https://image.tmdb.org/t/p/w1280/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg" alt="Portada de la pel·lícula" alt="Portada peli Avengers" height="200"></a>
+            <a href="https://avengers.com" target="_blank"><img src="https://image.tmdb.org/t/p/w1280/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg" alt="Portada peli Avengers" height="200"></a>
             <h3>The Avengers</h3>
             <p>27 abril de 2012</p>
         </article>
